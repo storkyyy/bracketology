@@ -1,0 +1,31 @@
+{
+  "name": "bracketology",
+  "version": "1.0.0",
+  "description": "Bracketology website",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server",
+    "start": "npm run lite"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/storkyyy/bracketology.git"
+  },
+  "keywords": [],
+  "author": "Daniel Wykes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/storkyyy/bracketology/issues"
+  },
+  "homepage": "https://github.com/storkyyy/bracketology#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
+    "@popperjs/core": "^2.9.2",
+    "bootstrap": "^5.0.2",
+    "jquery": "^3.6.0"
+  },
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}

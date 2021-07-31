@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "ACEA,AAAA,IAAI,CAAC;EACD,WAAW,EAAE,wBAAwB;CACxC;;AAED,AAAA,UAAU,CAAC;EACP,MAAM,EAAE,CAAC;EACT,KAAK,ECLS,OAAO;EDMrB,gBAAgB,ECRK,OAAO;CDa/B;;AARD,AAKI,UALM,CAKN,GAAG,CAAA;EACC,OAAO,EAAE,CAAC;CACb",
+    "sources": [
+        "../sass/main.scss",
+        "../sass/layout/_jumbotron.scss",
+        "../sass/themes/_color-palette.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
