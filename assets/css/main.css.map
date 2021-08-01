@@ -1,9 +1,13 @@
 {
     "version": 3,
-    "mappings": "ACEA,AAAA,IAAI,CAAC;EACD,WAAW,EAAE,wBAAwB;CACxC;;AAED,AAAA,UAAU,CAAC;EACP,MAAM,EAAE,CAAC;EACT,KAAK,ECLS,OAAO;EDMrB,gBAAgB,ECRK,OAAO;CDa/B;;AARD,AAKI,UALM,CAKN,GAAG,CAAA;EACC,OAAO,EAAE,CAAC;CACb",
+    "mappings": "ACEA,AAAA,IAAI,CAAC;EACD,WAAW,EAAE,wBAAwB;CACxC;;AAED,AAAA,UAAU,CAAC;EACP,MAAM,EAAE,CAAC;EACT,KAAK,ECJS,OAAO;EDKrB,gBAAgB,ECRK,OAAO;CDa/B;;AARD,AAKI,UALM,CAKN,GAAG,CAAA;EACC,OAAO,EAAE,CAAC;CACb;;AEXL,AAAA,MAAM,CAAC;EACH,MAAM,EAAE,CAAC;EACT,gBAAgB,EDHK,OAAO;ECI5B,KAAK,EDGY,OAAO;CCY3B;;AAlBD,AAKI,MALE,GAKE,OAAO,CAAC;EACR,aAAa,EAAE,SAAS;EACxB,mBAAmB,EDJb,OAAO;CCKhB;;AARL,AAUI,MAVE,CAUF,GAAG,CAAC;EACA,MAAM,EAAE,IAAI;CACf;;AAZL,AAcI,MAdE,CAcF,CAAC,CAAC;EACE,KAAK,EDTQ,OAAO;CCUvB;;AEhBL,AAAA,IAAI,CAAC;EACD,KAAK,EHAS,OAAO;EGCrB,gBAAgB,EHFJ,OAAO;CGGtB",
     "sources": [
         "../sass/main.scss",
         "../sass/layout/_jumbotron.scss",
+        "../sass/themes/_color-palette.scss",
+        "../sass/layout/_footer.scss",
+        "../sass/themes/_color-palette.scss",
+        "../sass/layout/_body.scss",
         "../sass/themes/_color-palette.scss"
     ],
     "names": [],

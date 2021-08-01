@@ -1,7 +1,21 @@
 @import '../themes/color-palette';
 
-.site-footer {
+footer {
     margin: 0;
-    color: $icon-logo-color;
     background-color: $header-footer-bg-color;
+    color: $bracket-game-color;
+
+    & > section {
+        border-bottom: 2px solid;
+        border-bottom-color: $split-color;
+    }
+
+    img {
+        height: 20px;
+    }
+
+    i {
+        color: $bracket-game-color;
+    }
+
 }

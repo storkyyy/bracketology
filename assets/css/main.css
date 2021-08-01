@@ -11,4 +11,28 @@ html {
 .jumbotron div {
   padding: 0;
 }
+
+footer {
+  margin: 0;
+  background-color: #13293D;
+  color: #2A628F;
+}
+
+footer > section {
+  border-bottom: 2px solid;
+  border-bottom-color: #18435A;
+}
+
+footer img {
+  height: 20px;
+}
+
+footer i {
+  color: #2A628F;
+}
+
+body {
+  color: #247188;
+  background-color: #16324F;
+}
 /*# sourceMappingURL=main.css.map */
