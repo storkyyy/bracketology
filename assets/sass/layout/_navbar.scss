@@ -1,22 +1,37 @@
 @import '../themes/color-palette'; 
 
 .navbar {
+
     background-color: $header-footer-bg-color;
 
     .navbar-brand {
+
         color: $icon-logo-color
+    
     }
 
     .navbar-toggler {
+
         border: none;
+
+        &:focus,
+        &:active,
+        #custom-toggler-icon-border:focus {
+            outline: none !important;
+            box-shadow: none !important;
+            background-color: $onclick-semi-transparent-shadow;
+        }
 
     }
 
     .custom-toggler .navbar-toggler-icon {
+
         background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(76, 201, 240, 1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+
     }
 
     .nav-link {
         color: $icon-logo-color !important;
     }
+    
 }

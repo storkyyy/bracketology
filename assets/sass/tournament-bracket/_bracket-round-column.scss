@@ -1,0 +1,24 @@
+.bracket-round {
+    width: 20%;
+}
+
+.bracket-round-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bracket-game {
+    width: 100%;
+    background-color: $bracket-game-color;
+    color: $bracket-game-text-color;
+
+    .bracket-team-top {
+        display: flex;
+        border-bottom: solid 1px;
+    }
+
+    .bracket-team-bottom {
+        display: flex;
+    }
+}

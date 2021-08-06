@@ -3,19 +3,14 @@
 footer {
     margin: 0;
     background-color: $header-footer-bg-color;
-    color: $bracket-game-color;
-
-    & > section {
-        border-bottom: 2px solid;
-        border-bottom-color: $split-color;
-    }
-
-    img {
-        height: 20px;
-    }
+    color: $bracket-game-text-color;
 
     i {
-        color: $bracket-game-color;
+        color: $bracket-game-text-color;
+    }
+    
+    #footerCopyright {
+        font-size: .6rem;
     }
 
 }

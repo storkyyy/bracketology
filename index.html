@@ -13,31 +13,20 @@
     <title>Bracketology Home Page</title>
 </head>
 <body>
-    <main>
         
             <nav class="navbar navbar-expand-lg sticky-top">
-                <div class="container-fluid">
-                    <a class="navbar-brand mr-auto" href="#">
+                <div class="container-fluid w-100">
+                    <a class="navbar-brand" href="#">
                         <img class="img-fluid d-inline-block align-text-top" width="30" height="24" src="assets/imgs/bracketology-logo.png" alt="Bracketology Company Logo">
-                        Bracketology
+                        <span class="d-none d-sm-inline-flex">Bracketology</span>
                     </a>
                     <div class="collapse navbar-collapse" id="navbarDefault">
                         <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="#">Home</a>
                             </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Tournaments
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Tournaments</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Leaderboard</a>
@@ -45,72 +34,146 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Rules</a>
                             </li>
+                            <button class="btn btn-outline-primary" id="getStartedCollapsedNavBtn" type="button" aria-hidden="true" hidden>Get Started</button>
                         </ul>
                     </div>
-                    <button class="btn btn-outline-primary" type="submit">Start Winning Money</button>
-                    <button class="navbar-toggler mr-auto custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDefault" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+                    <div class="ml-auto">
+                        <button class="btn btn-outline-primary" id="getStartedExternalNavBtn" type="button" aria-hidden="false">Get Started</button>
+                        <button class="navbar-toggler mr-auto custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon" id="custom-toggler-icon-border"></span>
+                        </button>
+                    </div>
                 </div>
             </nav>
 
+    <main>
             
-            <div class="container d-flex">
-                <!-- round 1 -->
-                <div class="container align-items-center">
-                    <h3 class="text-center">Round 1</h3>
-                    <div class="row bracket-round-column">
-                        <div class="col-8">
-                            <div class="p-2 mt-2" style="border: 1px solid #4CC9F0; margin: 0;">content</div>
-                            <div class="p-2 mb-2" style="border: 1px solid #4CC9F0; margin: 0;">content</div>
+        <div class="container-fluid d-flex justify-content-center">
+            <!-- round 1 -->
+            <section class="d-fex m-auto bracket-round">
+                <h3 class="text-center">Round 1</h3>
+                <div class="row bracket-round-column">
+                    <div class="col">
+                        <div class="btn bracket-game mb-3">
+                            <span class="bracket-team-top">-</span>
+                            <span class="bracket-team-bottom">-</span>
                         </div>
-                        <div class="col-8">
-                            <div class="p-2 mt-2" style="border: 1px solid #4CC9F0; margin: 0;">content</div>
-                            <div class="p-2 mb-2" style="border: 1px solid #4CC9F0;">content</div>
+                    </div>
+                    <div class="col">
+                        <div class="btn bracket-game mb-3">
+                            <span class="bracket-team-top">-</span>
+                            <span class="bracket-team-bottom">-</span>
                         </div>
-                        <div class="col-8">
-                            <div class="p-2 mt-2" style="border: 1px solid #4CC9F0; margin: 0;">content</div>
-                            <div class="p-2 mb-2" style="border: 1px solid #4CC9F0; margin: 0;">content</div>
+                    </div>
+                    <div class="col">
+                        <div class="btn bracket-game mb-3">
+                            <span class="bracket-team-top">-</span>
+                            <span class="bracket-team-bottom">-</span>
                         </div>
-                        <div class="col-8">
-                            <div class="p-2 mt-2" style="border: 1px solid #4CC9F0; margin: 0;">content</div>
-                            <div class="p-2 mb-2" style="border: 1px solid #4CC9F0; margin: 0;">content</div>
+                    </div>
+                    <div class="col">
+                        <div class="btn bracket-game mb-3">
+                            <span class="bracket-team-top">-</span>
+                            <span class="bracket-team-bottom">-</span>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="btn bracket-game mb-3">
+                            <span class="bracket-team-top">-</span>
+                            <span class="bracket-team-bottom">-</span>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="btn bracket-game mb-3">
+                            <span class="bracket-team-top">-</span>
+                            <span class="bracket-team-bottom">-</span>
                         </div>
                     </div>
                 </div>
-                <!-- round 1 -->
+            </section>
+            <!-- round 1 -->
 
-                <!-- round 2 -->
-                <div class="container">
-                    <h3 class="text-center">Round 2</h3>
-                    <div class="row bracket-round-column d-inline-flex p-2">
-                        <div class="col-8 flex-column">
-                            <div class="p-2 mt-2" style="border: 1px solid #4CC9F0; margin: 0;">content</div>
-                            <div class="p-2 mb-4" style="border: 1px solid #4CC9F0; margin: 0;">content</div>
+            <!-- round 2 -->
+            <section class="d-fex m-auto bracket-round">
+                <h3 class="text-center">Round 2</h3>
+                <div class="row bracket-round-column">
+                    <div class="col">
+                        <div class="btn bracket-game mb-3">
+                            <span class="bracket-team-top">-</span>
+                            <span class="bracket-team-bottom">-</span>
                         </div>
-                        <div class="col-8">
-                            <div class="p-2 mt-2" style="border: 1px solid #4CC9F0; margin: 0;">content</div>
-                            <div class="p-2 mb-4" style="border: 1px solid #4CC9F0;">content</div>
-                        </div>                        
+                    </div>
+                    <div class="col">
+                        <div class="btn bracket-game mb-3">
+                            <span class="bracket-team-top">-</span>
+                            <span class="bracket-team-bottom">-</span>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="btn bracket-game mb-3">
+                            <span class="bracket-team-top">-</span>
+                            <span class="bracket-team-bottom">-</span>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="btn bracket-game mb-3">
+                            <span class="bracket-team-top">-</span>
+                            <span class="bracket-team-bottom">-</span>
+                        </div>
                     </div>
                 </div>
-                <!-- round 2 -->
+            </section>
+            <!-- round 2 -->
 
-            </div>
+            <!-- round 3 -->
+            <section class="d-fex m-auto bracket-round">
+                <h3 class="text-center">Round 3</h3>
+                <div class="row bracket-round-column">
+                    <div class="col">
+                        <div class="btn bracket-game mb-3">
+                            <span class="bracket-team-top">-</span>
+                            <span class="bracket-team-bottom">-</span>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="btn bracket-game mb-3">
+                            <span class="bracket-team-top">-</span>
+                            <span class="bracket-team-bottom">-</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- round 3 -->
+
+            <!-- championship -->
+            <section class="d-fex m-auto bracket-round">
+                <h3 class="text-center">Round 3</h3>
+                <div class="row bracket-round-column">
+                    <div class="col">
+                        <div class="btn bracket-game">
+                            <span class="bracket-team-top">-</span>
+                            <span class="bracket-team-bottom">-</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- championship -->
+
+        </div>
             
     </main>
 
     <!-- Footer -->
     <footer class="fixed-bottom">
-        <section class="d-flex justify-content-center justify-content-md-between p-4">
+        <section class="d-flex justify-content-between p-4">
             <!-- Left -->
-            <div class="d-block align-self-center">
-                <span>&copy; 2021 Bracketology</span>
+            <div class="d-inline-flex d-sm-block align-self-center">
+                <span id="footerCopyright">&copy; 2021 Bracketology</span>
             </div>
             <!-- Left -->
 
-            <!-- Middle -->
-            <div class="d-block align-self-center">
+            <!-- Middle: Hide when xs screen -->
+            <div class="d-none d-sm-block align-self-center">
                 <a href="#" class="btn"><i>About</i></a>
                 <a href="#" class="btn"><i>FAQ</i></a>
                 <a href="#" class="btn"><i>Settings</i></a>
@@ -118,21 +181,26 @@
             <!-- Middle -->
 
             <!-- Right -->
-            <div class="d-block">
+            <div class="d-inline-flex d-sm-block">
                 <a href="https://twitch.tv" class="btn btn-social-icon btn-twitch" target="_blank">
-                    <i class="fa fa-twitch fa-2x"></i>
+                    <i class="fa fa-twitch fa-2x d-none d-md-inline-flex"></i>
+                    <i class="fa fa-twitch d-inline-flex d-md-none"></i>
                 </a>
                 <a href="https://instagram.com" class="btn btn-social-icon btn-instagram" target="_blank">
-                    <i class="fa fa-instagram fa-2x"></i>
+                    <i class="fa fa-instagram fa-2x d-none d-md-inline-flex"></i>
+                    <i class="fa fa-instagram d-inline-flex d-md-none"></i>
                 </a>
                 <a href="https://twitter.com" class="btn btn-social-icon btn-twitter" target="_blank">
-                    <i class="fa fa-lg fa-twitter fa-2x"></i>
+                    <i class="fa fa-lg fa-twitter fa-2x d-none d-md-inline-flex"></i>
+                    <i class="fa fa-lg fa-twitter d-inline-flex d-md-none"></i>
                 </a>
                 <a href="https://youtube.com" class="btn btn-social-icon btn-youtube" target="_blank">
-                    <i class="fa fa-youtube fa-2x"></i>
+                    <i class="fa fa-youtube fa-2x d-none d-md-inline-flex"></i>
+                    <i class="fa fa-youtube d-inline-flex d-md-none"></i>
                 </a>
                 <a href="https://facebook.com" class="btn btn-social-icon btn-facebook" target="_blank">
-                    <i class="fa fa-facebook fa-2x"></i>
+                    <i class="fa fa-facebook fa-2x d-none d-md-inline-flex"></i>
+                    <i class="fa fa-facebook d-inline-flex d-md-none"></i>
                 </a>
             </div>
             <!-- Right -->
@@ -144,5 +212,8 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- Asset scripts -->
+    <script src="assets/js/navbar-scripts.js"></script>
 </body>
 </html>
