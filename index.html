@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
@@ -17,24 +17,18 @@
         
             <nav class="navbar navbar-expand-lg sticky-top">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#">
+                    <a class="navbar-brand mr-auto" href="#">
                         <img class="img-fluid d-inline-block align-text-top" width="30" height="24" src="assets/imgs/bracketology-logo.png" alt="Bracketology Company Logo">
                         Bracketology
                     </a>
-                    <button class="navbar-toggler ml-auto custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <div class="collapse navbar-collapse" id="navbarDefault">
+                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="#">Home</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Link</a>
-                            </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Dropdown
+                                    Tournaments
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <li><a class="dropdown-item" href="#">Action</a></li>
@@ -46,13 +40,17 @@
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                                <a class="nav-link" href="#">Leaderboard</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Rules</a>
                             </li>
                         </ul>
-                        <form class="d-flex">
-                            <button class="btn btn-outline-primary" type="submit">Start Winning Money</button>
-                        </form>
                     </div>
+                    <button class="btn btn-outline-primary" type="submit">Start Winning Money</button>
+                    <button class="navbar-toggler mr-auto custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDefault" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
                 </div>
             </nav>
 
@@ -80,6 +78,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- round 1 -->
 
                 <!-- round 2 -->
                 <div class="container">
@@ -95,6 +94,7 @@
                         </div>                        
                     </div>
                 </div>
+                <!-- round 2 -->
 
             </div>
             
@@ -104,13 +104,21 @@
     <footer class="fixed-bottom">
         <section class="d-flex justify-content-center justify-content-md-between p-4">
             <!-- Left -->
-            <div class="d-none d-md-block align-self-center">
+            <div class="d-block align-self-center">
                 <span>&copy; 2021 Bracketology</span>
             </div>
             <!-- Left -->
 
+            <!-- Middle -->
+            <div class="d-block align-self-center">
+                <a href="#" class="btn"><i>About</i></a>
+                <a href="#" class="btn"><i>FAQ</i></a>
+                <a href="#" class="btn"><i>Settings</i></a>
+            </div>
+            <!-- Middle -->
+
             <!-- Right -->
-            <div>
+            <div class="d-block">
                 <a href="https://twitch.tv" class="btn btn-social-icon btn-twitch" target="_blank">
                     <i class="fa fa-twitch fa-2x"></i>
                 </a>
