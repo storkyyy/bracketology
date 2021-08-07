@@ -6,7 +6,12 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lite": "lite-server",
-    "start": "npm run lite"
+    "start": "npm run lite",
+    "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin",
+    "clean": "rimraf dist",
+    "imagemin": "imagemin assets/imgs/* -o dist/imgs",
+    "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
+    "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html"
   },
   "repository": {
     "type": "git",
@@ -27,6 +32,11 @@
     "jquery": "^3.6.0"
   },
   "devDependencies": {
-    "lite-server": "^2.6.1"
+    "copyfiles": "^2.2.0",
+    "imagemin-cli": "^5.1.0",
+    "lite-server": "^2.6.1",
+    "parallelshell": "^3.0.1",
+    "rimraf": "^3.0.2",
+    "usemin-cli": "^0.6.0"
   }
 }

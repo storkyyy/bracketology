@@ -6,49 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
 
     <!-- Bootstrap -->
+    <!-- build:css css/main.css -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="assets/css/main.css">
+    <!-- endbuild -->
 
     <title>Bracketology Home Page</title>
 </head>
 <body>
         
-            <nav class="navbar navbar-expand-lg sticky-top">
-                <div class="container-fluid w-100">
-                    <a class="navbar-brand" href="#">
-                        <img class="img-fluid d-inline-block align-text-top" width="30" height="24" src="assets/imgs/bracketology-logo.png" alt="Bracketology Company Logo">
-                        <span class="d-none d-sm-inline-flex">Bracketology</span>
-                    </a>
-                    <div class="collapse navbar-collapse" id="navbarDefault">
-                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Tournaments</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Leaderboard</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Rules</a>
-                            </li>
-                            <button class="btn btn-outline-primary" id="getStartedCollapsedNavBtn" type="button" aria-hidden="true" hidden>Get Started</button>
-                        </ul>
-                    </div>
-                    <div class="ml-auto">
-                        <button class="btn btn-outline-primary" id="getStartedExternalNavBtn" type="button" aria-hidden="false">Get Started</button>
-                        <button class="navbar-toggler mr-auto custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon" id="custom-toggler-icon-border"></span>
-                        </button>
-                    </div>
-                </div>
-            </nav>
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container-fluid w-100">
+            <a class="navbar-brand" href="#">
+                <img class="img-fluid d-inline-block align-text-top" width="30" height="24" src="assets/imgs/bracketology-logo.png" alt="Bracketology Company Logo">
+                <span class="d-none d-sm-inline-flex">Bracketology</span>
+            </a>
+            <div class="collapse navbar-collapse" id="navbarDefault">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <button class="btn btn-outline-primary" id="getStartedCollapsedNavBtn" type="button" aria-hidden="true" hidden>Get Started</button>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tournaments</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Leaderboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Rules</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="ml-auto">
+                <button class="btn btn-outline-primary" id="getStartedExternalNavBtn" type="button" aria-hidden="false">Get Started</button>
+                <button class="navbar-toggler mr-auto custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon" id="custom-toggler-icon-border"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
 
-    <main>
+    <main class="tournament-bracket-main">
             
-        <div class="container-fluid d-flex justify-content-center">
+        <div class="container-fluid d-flex justify-content-center mt-lg-5 mb-lg-5">
             <!-- round 1 -->
             <section class="d-fex m-auto bracket-round">
                 <h3 class="text-center">Round 1</h3>
@@ -164,7 +168,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="fixed-bottom">
+    <footer class="footer fixed-bottom">
         <section class="d-flex justify-content-between p-4">
             <!-- Left -->
             <div class="d-inline-flex d-sm-block align-self-center">
@@ -209,11 +213,11 @@
     </footer>
 
     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <!-- build:js js/main.js -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
-    <!-- Asset scripts -->
     <script src="assets/js/navbar-scripts.js"></script>
+    <!-- endbuild -->
 </body>
 </html>

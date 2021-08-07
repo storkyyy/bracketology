@@ -1,33 +1,35 @@
-function moveGetStartedButton () {
-    let getStartedBtnNotCollapsedNav = document.querySelector('#getStartedExternalNavBtn')
-    let getStartedBtnCollapsedNav = document.querySelector('#getStartedCollapsedNavBtn')
+function showHideNavGetStartedButton() {
 
-    // When toggler clicked, want to move button showing in navbar to drop down 
-    if (getStartedBtnNotCollapsedNav.getAttribute('aria-hidden') === false) {
+    //Button when navbar is collapsed
+    let getStartedBtnNotCollapsedNav = document.querySelector('#getStartedExternalNavBtn');
+    let getStartedBtnNotCollapsedNavAriaHidden = getStartedBtnNotCollapsedNav.getAttribute('aria-hidden');
 
-        //Hide button originally in navbar
-        getStartedBtnNotCollapsedNav.setAttribute('aria-hidden', true);
-        getStartedBtnNotCollapsedNav.setAttribute('hidden', true);
+    //Button to show on click of toggler when navbar collapsed
+    let getStartedBtnCollapsedNav = document.querySelector('#getStartedCollapsedNavBtn');
+    let getStartedBtnCollapsedNavAriaHidden = getStartedBtnCollapsedNav.getAttribute('aria-hidden');
 
-        //Show the button within toggled list
-        getStartedBtnCollapsedNav.setAttribute('aria-hidden', false);
-        getStartedBtnCollapsedNav.removeAttribute('hidden');
+    if (getStartedBtnNotCollapsedNavAriaHidden === 'false') {
+
+        // hiding button from non-collapsed nav
+        getStartedBtnNotCollapsedNav.setAttribute(getStartedBtnNotCollapsedNavAriaHidden, 'true');
+        getStartedBtnNotCollapsedNav.hidden = true;
+
+        // show button in collapsed/toggled nav
+        getStartedBtnCollapsedNav.setAttribute(getStartedBtnCollapsedNavAriaHidden, 'false');
+        getStartedBtnCollapsedNav.hideen = false;
 
     } else {
 
-        //Hide button in toggled list
-        getStartedBtnCollapsedNav.setAttribute('aria-hidden', true);
-        getStartedBtnCollapsedNav.setAttribute('hidden', true);
+        // show button from non-collapsed nav
+        getStartedBtnNotCollapsedNav.setAttribute(getStartedBtnNotCollapsedNavAriaHidden, 'false');
+        getStartedBtnNotCollapsedNav.hidden = false;
 
-        //Show the button within navbar
-        getStartedBtnNotCollapsedNav.setAttribute('aria-hidden', false);
-        getStartedBtnNotCollapsedNav.removeAttribute('hidden');
+        // hide button in collapsed/toggled nav
+        getStartedBtnCollapsedNav.setAttribute(getStartedBtnCollapsedNavAriaHidden, 'true');
+        getStartedBtnCollapsedNav.hideen = true;
 
     }
-
-
 }
 
-
 const togglerBtn = document.querySelector('.custom-toggler')
-togglerBtn.addEventListener('click', moveGetStartedButton)
+togglerBtn.addEventListener('click', showHideNavGetStartedButton)
